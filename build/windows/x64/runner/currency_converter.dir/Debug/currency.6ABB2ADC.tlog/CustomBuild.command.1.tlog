@@ -1,0 +1,10 @@
+^C:\USERS\UTKARSH SHARMA\CURRENCY_CONVERTER\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Utkarsh Sharma/currency_converter/windows" "-BC:/Users/Utkarsh Sharma/currency_converter/build/windows/x64" --check-stamp-file "C:/Users/Utkarsh Sharma/currency_converter/build/windows/x64/runner/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

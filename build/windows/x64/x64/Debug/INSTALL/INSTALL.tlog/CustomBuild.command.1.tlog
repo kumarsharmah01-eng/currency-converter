@@ -1,0 +1,10 @@
+^C:\USERS\UTKARSH SHARMA\CURRENCY_CONVERTER\BUILD\WINDOWS\X64\CMAKEFILES\D4DC7A738B8AEF805EF73CF76B6D38FC\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
